@@ -4,7 +4,7 @@ import requests
 response = requests.get('https://my-json-server.typicode.com/danodic/json_mock/request_track_list')
 
 # Assert the response code
-assert(response.status_code)
+assert(response.status_code == 200)
 
 # Convert response to a dictionary
 data = response.json()
